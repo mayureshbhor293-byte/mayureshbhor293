@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Project - Event Pass</title>
+</head>
+<body>
+    <div>
+        <h1 align="center">🎟️ Event Pass</h1>
+        <fieldset style="width:400px; margin:0 auto; text-align:left">
+            <legend align="center">Pass Details</legend>
+            <section>
+                <label for="event">Event Name : </label>
+                <input type="text" id="event" placeholder="Enter event name" required>
+                <br><br>
+
+                <label for="participant">Participant Name : </label>
+                <input type="text" id="participant" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="date">Date & Venue : </label>
+                <input type="text" id="date" placeholder="DD/MM/YYYY, Venue" required>
+                <br><br>
+
+                <label for="type">Pass Type : </label>
+                <select id="type" required>
+                    <option value="">--Select--</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Student">Student</option>
+                </select>
+                <br><br>
+
+                <label for="meal">Meal Preference : </label>
+                <select id="meal" required>
+                    <option value="">--Select--</option>
+                    <option value="Veg">Vegetarian</option>
+                    <option value="Non-Veg">Non-Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                </select>
+                <br><br>
+
+                <label for="contact">Contact Number : </label>
+                <input type="tel" id="contact" placeholder="9876543210" required>
+                <br><br>
+
+                <label for="image">Pass Image : </label>
+                <input type="file" id="image" accept="image/*">
+                <br><br>
+
+                <section align="center">
+                    <button type="submit">Generate Pass</button>
+                </section>
+            </section>
+        </fieldset>
+    </div>
+</body>
+</html>
