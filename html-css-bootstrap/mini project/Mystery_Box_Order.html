@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Project - Mystery Box Order</title>
+</head>
+<body>
+    <div>
+        <h1 align="center">📦 Mystery Box Order</h1>
+        <fieldset style="width:400px; margin:0 auto; text-align:left">
+            <legend align="center">Order Form</legend>
+            <section>
+                <label for="box">Box Type : </label>
+                <select id="box" required>
+                    <option value="">--Select--</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+                <br><br>
+
+                <label for="price">Price : </label>
+                <input type="text" id="price" placeholder="Enter price" required>
+                <br><br>
+
+                <label for="quantity">Quantity : </label>
+                <input type="number" id="quantity" min="1" required>
+                <br><br>
+
+                <label for="items">Preferred Items : </label>
+                <textarea id="items" name="items" rows="2" cols="40" placeholder="Enter preferred items"></textarea>
+                <br><br>
+
+                <label for="address">Delivery Address : </label>
+                <textarea id="address" name="address" rows="3" cols="40" placeholder="Enter delivery address" required></textarea>
+                <br><br>
+
+                <label for="instructions">Special Instructions : </label>
+                <textarea id="instructions" name="instructions" rows="2" cols="40" placeholder="Any special instructions"></textarea>
+                <br><br>
+
+                <section align="center">
+                    <button type="submit">Place Order</button>
+                </section>
+            </section>
+        </fieldset>
+    </div>
+</body>
+</html>
