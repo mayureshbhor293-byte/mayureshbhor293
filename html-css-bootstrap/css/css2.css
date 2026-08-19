@@ -1,0 +1,79 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://t4.ftcdn.net/jpg/02/90/80/25/360_F_290802535_MttPB3KMMRsqT76hXi7IGdCxKvYaumJ6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 30px;
+    color: azure;
+}
+
+.onelist {
+    color: antiquewhite;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: fantasy;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.veg-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.vegphoto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.vegphoto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+.nonvegphoto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-left: 20px;
+    margin-top: 70px;
+}
+.nonvegphoto img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    margin-top: -40px;
+    padding:0%;
+}
+
+
