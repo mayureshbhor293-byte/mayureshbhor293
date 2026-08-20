@@ -1,0 +1,65 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+.navbarone{
+     background-color: bisque;
+     height: 110px;
+}
+.logo{
+    display:inline-block;
+    width: 10%;
+
+}
+.imgLOGO{
+   width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.menus{
+    list-style-type: none;
+    width: 35%;
+    float: inline-end;
+   
+}
+.navList{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: larger;
+    padding-top: 50px;
+}
+.navItem:link{
+    color: rgb(86, 36, 212);
+    text-decoration: none;
+    font-size: 22px;
+    
+}
+.navItem:hover{
+    border-bottom: 2px solid red;
+}
+.navItem:active{}
+.navItem:visited{
+    color: brown;
+}
+.formdata{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    background-origin: padding-box;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 50px;
+}
+.legendone{
+    font-size:small;
+}
+
+.button{
+    font-size: 20px;  
+    padding:10px;
+    border-radius: 10px;
+    margin: 30px;
+}
