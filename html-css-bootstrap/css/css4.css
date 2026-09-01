@@ -1,0 +1,109 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+.navbarone{
+     background-color: rgb(233, 215, 194);
+     height: 110px;
+}
+.logo{
+    display:inline-block;
+    width: 10%;
+
+}
+.imgLOGO{
+   width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.menus{
+    list-style-type: none;
+    width: 50%;
+    float: inline-end;
+    text-decoration: wavy;
+}
+.navList{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: small;
+    padding-top: 50px;
+}
+.navItem:link{
+    color: rgb(86, 36, 212);
+    text-decoration: none;
+    font-size: 22px;
+    
+}
+.navItem:hover{
+    border-bottom: 2px solid red;
+}
+.navItem:active{}
+.navItem:visited{
+    color: brown;
+}
+
+.h2 {
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 28px;
+      color: rgb(113, 27, 27);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      display: inline-block;
+      padding-bottom: 5px;
+      background-color:aliceblue;
+    }
+.dl {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+.dt {
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+.specification{
+
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.spec{ max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+.varints{
+     max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.form{
+    max-width: 700px;
+      margin: auto;
+      background: #e5a5a5;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0
+}
+.pass{
+    text-align: center;
+    text-decoration: dashed;
+}
