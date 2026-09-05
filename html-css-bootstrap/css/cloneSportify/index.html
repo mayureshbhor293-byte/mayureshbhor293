@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone (No JS)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <aside>
+            <div class="asidebar">
+                <div class="yourLibrary">
+                    <p>Your Library</p>
+                    <p><button><i>+</i> Create</button></p>
+                </div>
+                <div class="asideCard">
+                    <h4>Create your first playlist</h4>
+                    <p>It’s easy, we’ll help you</p>
+                    <button>Create Playlist</button>
+                </div>
+                <div class="asideCard">
+                    <h4>Find podcasts</h4>
+                    <p>We’ve got stories for you</p>
+                    <button>Browse Podcasts</button>
+                </div>
+            </div>
+        </aside>
+
+        <section>
+            <h2>Trending Songs</h2>
+            <div class="cardContainer">
+                <div class="card">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHb20DXqEgPk4uKrnLM97Q2wo_tA9QsgWJngTvO7EyQ&s=10" alt="" class="imgCard">
+                    <p class="songName">Chakri</p>
+                    
+                    <audio controls>
+                       <source src="./resource/chakri_song.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+
+
+
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7rYZyDi_5GwYqUn6uzkpK4JyoE_QLSOKmqI60kd7ZCQ&s=10" alt="" class="imgCard">
+                    <p class="songName">hil hil pori hila</p>
+                    
+                    <audio controls>
+                        <source src="./resource/Hil Pori Hila  Bhau Kadam  Gautami Patil  Rohit Raut  Sonali Sonawane  Prasad Shirsath.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="card">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShQXJRjIf8VxDdKm3rR3yKrYx4xYhPoQDUmSVRzL6f7A&s" class="imgcard">
+                    <p class="songName">Tum Hi Ho</p>
+                    <p class="artistList">Arijit Singh</p>
+                    <audio controls>
+                        <source src="./resource/Tum Hi Ho Song Aashiqui 2  Music By Mithoon  Aditya Roy Kapur, Shraddha Kapoor.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="signUp">
+        <div class="leftDiv">
+            <p>Preview of Spotify</p>
+            <p>Sign up to get unlimited songs and podcasts</p>
+        </div>
+        <div class="rightDiv">
+            <a href="#signinForm"><button>Sign up for free</button></a>
+        </div>
+    </div>
+
+    <div id="signinForm" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>Sign In</h2>
+            <form>
+                <label>Email:</label>
+                <input type="email" required>
+                <label>Password:</label>
+                <input type="password" required>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
