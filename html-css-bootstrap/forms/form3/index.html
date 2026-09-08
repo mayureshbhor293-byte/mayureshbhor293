@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .card {
+            background: #f2f2f2;
+            width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: normal;
+            color: #333;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .options {
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        .options span {
+            margin: 0 15px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: #3d4db7;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .input-box {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .input-box .icon {
+            background: #3d4db7;
+            color: white;
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .input-box input {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 5px 5px 0;
+            padding: 0 10px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .bottom p {
+            font-size: 12px;
+            width: 180px;
+        }
+
+        button {
+            background: #3d4db7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: #a0a2ae;
+        }
+        .btn {
+      background: #3d4db7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none; /* if using <a> */
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Registration</h1>
+        <hr>
+
+        <div class="options">
+            <span>
+                <input type="radio">Personal&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="radio">Company
+
+        </div>
+        <hr>
+
+        <div class="input-box">
+            <div class="icon">✉</div>
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="input-box">
+            <div class="icon">👤</div>
+            <input type="text" placeholder="Name">
+        </div>
+
+        <div class="input-box">
+            <div class="icon">🔒</div>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div class="options">
+            <input type="radio" name="gender" id="male"><label for="male">Male</label>
+            <input type="radio" name="gender" id="female"><label for="female">Female</label><br><br>
+
+        </div>
+        <div class="bottom">
+    <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+    <a href="page2.html" class="btn">Register</a>
+  </div>
+
+
+</body>
+
+</html>

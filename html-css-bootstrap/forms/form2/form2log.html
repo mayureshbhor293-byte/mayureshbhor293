@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4361ee;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    padding: 40px 16px;
+  }
+
+  .card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 16px;
+    padding: 36px 40px 32px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  h1.title {
+    margin: 0 0 24px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+    position: relative;
+    display: inline-block;
+  }
+
+  h1.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 44px;
+    height: 3px;
+    background: #4361ee;
+    border-radius: 2px;
+  }
+
+  h2.section-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #8b8fa3;
+    margin: 28px 0 16px;
+  }
+
+  h2.section-title:first-of-type {
+    margin-top: 4px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 18px;
+  }
+
+  .field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+  }
+
+  .field input {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1.5px solid #e2e4ec;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #1a1a2e;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+
+  .field input::placeholder {
+    color: #a9adbb;
+  }
+
+  .field input:focus {
+    border-color: #4361ee;
+  }
+
+  .next-btn {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #4361ee;
+    color: #fff;
+    border: none;
+    padding: 13px 26px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+
+  .next-btn:hover {
+    background: #3a53d0;
+  }
+
+  .next-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+ 
+  
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1 class="title">Registration</h1>
+
+  <h2 class="section-title">Personal Details</h2>
+  <div class="row">
+    <div class="field">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Enter your name">
+    </div>
+    <div class="field">
+      <label for="dob">Date of Birth</label>
+      <input type="text" id="dob" placeholder="Enter birth date">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+  </div>
+  <div class="row">
+    <div class="field">
+      <label for="mobile">Mobile number</label>
+      <input type="text" id="mobile" placeholder="Enter mobile number">
+    </div>
+    <div class="field">
+      <label for="gender">Gender</label>
+      <input type="text" id="gender" placeholder="Enter your gender">
+    </div>
+    <div class="field">
+      <label for="occupation">Occupation</label>
+      <input type="text" id="occupation" placeholder="Enter occupation">
+    </div>
+  </div>
+
+  <h2 class="section-title">Identity Details</h2>
+  <div class="row">
+    <div class="field">
+      <label for="idType">ID Type</label>
+      <input type="text" id="idType" placeholder="Enter ID type">
+    </div>
+    <div class="field">
+      <label for="idNumber">ID Number</label>
+      <input type="text" id="idNumber" placeholder="Enter ID number">
+    </div>
+    <div class="field">
+      <label for="issueAuthority">Issue Authority</label>
+      <input type="text" id="issueAuthority" placeholder="Enter issue department">
+    </div>
+  </div>
+  <div class="row">
+    <div class="field">
+      <label for="issueDate">Issue Date</label>
+      <input type="text" id="issueDate" placeholder="Enter ID issue date">
+    </div>
+    <div class="field">
+      <label for="issueState">Issue State</label>
+      <input type="text" id="issueState" placeholder="Enter ID issue state">
+    </div>
+    <div class="field">
+      <label for="expiryDate">Expiry Date</label>
+      <input type="text" id="expiryDate" placeholder="Enter ID expiry date">
+    </div>
+  </div>
+
+  <button class="next-btn" type="button">
+    Next
+    
+  </button>
+</div>
+
+</body>
+</html>
