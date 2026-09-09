@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 40px;
+    background: #c9a227;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 5px;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.grid img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* default circular */
+    object-fit: cover;
+    display: block;
+}
+
+/* Top (2), Right (3), Bottom (6), Left (8) → curved petal shapes */
+.grid img:nth-child(2) {
+    clip-path: ellipse(100% 60% at 50% 100%);
+    /* top curve */
+}
+
+.grid img:nth-child(3) {
+    clip-path: ellipse(60% 100% at 0% 50%);
+    /* right curve */
+}
+
+.grid img:nth-child(6) {
+    clip-path: ellipse(100% 60% at 50% 0%);
+    /* bottom curve */
+}
+
+.grid img:nth-child(8) {
+    clip-path: ellipse(60% 100% at 100% 50%);
+    /* left curve */
+}
