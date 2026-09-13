@@ -1,0 +1,91 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #222; }
+a { text-decoration: none; color: white; margin-left: 20px; }
+img { max-width: 100%; display: block; }
+
+.btn {
+  background: #3b6ef6;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+header {
+  background: #16213e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.property-top { padding: 30px; max-width: 1000px; margin: 0 auto; }
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.price { color: #3b6ef6; }
+
+.gallery { margin-bottom: 20px; }
+.main-img { height: 320px; width: 100%; object-fit: cover; border-radius: 6px; }
+.thumbs { display: flex; gap: 10px; margin-top: 10px; }
+.thumbs img { height: 70px; width: 100px; object-fit: cover; border-radius: 5px; }
+
+.agent-form {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.agent-form input,
+.agent-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.details { padding: 0 30px 50px; max-width: 1000px; margin: 0 auto; }
+.details h2 { margin: 30px 0 15px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+
+.stats div { border: 1px solid #ddd; border-radius: 6px; padding: 15px; }
+
+table { width: 100%; border-collapse: collapse; }
+td { padding: 10px; border-bottom: 1px solid #ddd; }
+
+.features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.features li:before { content: "✓ "; color: #3b6ef6; font-weight: bold; }
+
+footer {
+  background: #0f1729;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .stats, .features { grid-template-columns: 1fr 1fr; }
+  nav { display: none; }
+}
