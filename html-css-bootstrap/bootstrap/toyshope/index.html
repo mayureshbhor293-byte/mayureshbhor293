@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlayPop Toy Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body id="top" class="bg-body-tertiary">
+
+  <div class="text-bg-dark small py-2">
+    <div class="container d-flex align-items-center gap-3">
+      <span>Free shipping over $75</span>
+      <div class="d-flex ms-auto">
+        <button type="button" class="btn btn-link btn-sm link-light text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">👤 Sign in</button>
+        <div class="dropdown">
+          <button type="button" class="btn btn-link btn-sm link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD $</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><button class="dropdown-item" type="button">USD $</button></li>
+            <li><button class="dropdown-item" type="button">EUR €</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-warning border-bottom border-2 border-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 me-lg-4" href="#top">PlayPop</a>
+
+        <div class="d-flex align-items-center gap-2 ms-auto order-lg-3">
+          <button type="button" class="btn btn-dark position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" aria-label="Open shopping cart">🛒 <span class="d-none d-sm-inline">Cart</span>
+            
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-danger">2</span>
+          </button>
+          <button class="navbar-toggler border-2 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+          <ul class="navbar-nav mx-lg-3 fw-semibold">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
+          </ul>
+          <form class="input-group flex-grow-1 my-3 my-lg-0" role="search" onsubmit="return false;">
+            <input class="form-control border-2 border-dark" type="search" placeholder="Search bears, blocks, bots…" aria-label="Search toys">
+            <button class="btn btn-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="container py-4">
+      <div id="heroCarousel" class="carousel slide carousel-fade border border-2 border-dark rounded-4 shadow overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" class="bg-dark active" data-bs-target="#heroCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" class="bg-dark" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" class="bg-dark" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center mx-0 px-3 px-md-5 py-5 bg-warning">
+              <div class="col-md-7 px-md-5">
+                <span class="badge text-bg-dark rounded-pill px-3 py-2">Spring sale: up to 40% off</span>
+                <h1 class="display-3 fw-bold my-3">Play big.<br>Pack small.</h1>
+                <p class="lead mb-4">Pocket-size adventures and giant-size giggles for ages 0 to 12.</p>
+                <a href="#shop" class="btn btn-dark btn-lg rounded-pill">Shop the sale</a>
+              </div>
+              <div class="col-md-5 text-center display-1 py-4" aria-hidden="true">🧸</div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row align-items-center mx-0 px-3 px-md-5 py-5 bg-info">
+              <div class="col-md-7 px-md-5">
+                <span class="badge text-bg-dark rounded-pill px-3 py-2">New building sets</span>
+                <h1 class="display-3 fw-bold my-3">Build it.<br>Bash it.</h1>
+                <p class="lead mb-4">Bricks, bridges and castles that survive the biggest crash.</p>
+                <a href="#shop" class="btn btn-dark btn-lg rounded-pill">Shop building sets</a>
+              </div>
+              <div class="col-md-5 text-center display-1 py-4" aria-hidden="true">🧱</div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row align-items-center mx-0 px-3 px-md-5 py-5 bg-danger-subtle">
+              <div class="col-md-7 px-md-5">
+                <span class="badge text-bg-dark rounded-pill px-3 py-2">Plush collection</span>
+                <h1 class="display-3 fw-bold my-3">Soft toys.<br>Big hugs.</h1>
+                <p class="lead mb-4">Machine-washable friends for bedtime and car rides.</p>
+                <a href="#shop" class="btn btn-dark btn-lg rounded-pill">Meet the plush</a>
+              </div>
+              <div class="col-md-5 text-center display-1 py-4" aria-hidden="true">🧸</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container pb-4">
+      <div class="row row-cols-2 row-cols-lg-4 g-3">
+        <div class="col d-flex align-items-center gap-3">
+          <span class="flex-shrink-0 bg-warning border border-2 border-dark rounded-circle fs-3 lh-1 p-3" aria-hidden="true"></span>
+          <div><h2 class="h6 mb-0">Free shipping</h2><small class="text-body-secondary">Orders over $75</small></div>
+        </div>
+        <div class="col d-flex align-items-center gap-3">
+          <span class="flex-shrink-0 bg-success-subtle border border-2 border-dark rounded-circle fs-3 lh-1 p-3" aria-hidden="true"></span>
+          <div><h2 class="h6 mb-0">Free returns</h2><small class="text-body-secondary">Within 30 days</small></div>
+        </div>
+        <div class="col d-flex align-items-center gap-3">
+          <span class="flex-shrink-0 bg-info border border-2 border-dark rounded-circle fs-3 lh-1 p-3" aria-hidden="true"></span>
+          <div><h2 class="h6 mb-0">Safe payments</h2><small class="text-body-secondary">Encrypted checkout</small></div>
+        </div>
+        <div class="col d-flex align-items-center gap-3">
+          <span class="flex-shrink-0 bg-danger-subtle border border-2 border-dark rounded-circle fs-3 lh-1 p-3" aria-hidden="true"></span>
+          <div><h2 class="h6 mb-0">Friendly support</h2><small class="text-body-secondary">Chat any day</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="shop">
+      <h2 class="display-6 fw-bold mb-4">Fresh from the toy box</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+
+        <div class="col">
+          <article class="card h-100 border-2 border-dark rounded-4 shadow-sm overflow-hidden">
+            <div class="position-relative text-center display-1 py-4 bg-danger-subtle border-bottom border-2 border-dark" aria-hidden="true">
+              <span class="badge text-bg-dark position-absolute top-0 start-0 m-2 fs-6">New</span>
+              🐻
+            </div>
+            <div class="card-body d-flex flex-column">
+              <small class="text-body-secondary">Plush, ages 0+</small>
+              <h3 class="h6 mt-1">Barnaby the Big Hug Bear</h3>
+              <div class="text-warning small mb-2">★★★★☆ <span class="text-body-secondary">(128)</span></div>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span class="fw-bold fs-5">$24.00</span>
+                <button type="button" class="btn btn-warning btn-sm border-2 border-dark fw-semibold" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-2 border-dark rounded-4 shadow-sm overflow-hidden">
+            <div class="position-relative text-center display-1 py-4 bg-info-subtle border-bottom border-2 border-dark" aria-hidden="true">
+              <span class="badge text-bg-dark position-absolute top-0 start-0 m-2 fs-6">New</span>
+              🚀
+            </div>
+            <div class="card-body d-flex flex-column">
+              <small class="text-body-secondary">Vehicles, ages 5+</small>
+              <h3 class="h6 mt-1">Rocket Racer Kit</h3>
+              <div class="text-warning small mb-2">★★★★★ <span class="text-body-secondary">(86)</span></div>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span class="fw-bold fs-5">$32.00</span>
+                <button type="button" class="btn btn-warning btn-sm border-2 border-dark fw-semibold" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-2 border-dark rounded-4 shadow-sm overflow-hidden">
+            <div class="text-center display-1 py-4 bg-warning-subtle border-bottom border-2 border-dark" aria-hidden="true">🧱</div>
+            <div class="card-body d-flex flex-column">
+              <small class="text-body-secondary">Building, ages 4+</small>
+              <h3 class="h6 mt-1">Rainbow Brick Bucket</h3>
+              <div class="text-warning small mb-2">★★★★☆ <span class="text-body-secondary">(212)</span></div>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span class="fw-bold fs-5">$29.00</span>
+                <button type="button" class="btn btn-warning btn-sm border-2 border-dark fw-semibold" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col">
+          <article class="card h-100 border-2 border-dark rounded-4 shadow-sm overflow-hidden">
+            <div class="position-relative text-center display-1 py-4 bg-success-subtle border-bottom border-2 border-dark" aria-hidden="true">
+              <span class="badge text-bg-danger position-absolute top-0 start-0 m-2 fs-6">-30%</span>
+              🦖
+            </div>
+            <div class="card-body d-flex flex-column">
+              <small class="text-body-secondary">Vehicles, ages 4+</small>
+              <h3 class="h6 mt-1">Dino Dig Excavator</h3>
+              <div class="text-warning small mb-2">★★★★★ <span class="text-body-secondary">(158)</span></div>
+              <div class="d-flex justify-content-between align-items-center mt-auto">
+                <span><del class="text-body-secondary small">$40.00</del> <span class="fw-bold fs-5 text-danger">$28.00</span></span>
+                <button type="button" class="btn btn-warning btn-sm border-2 border-dark fw-semibold" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas">Add</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="position-relative h-100 d-flex align-items-center justify-content-between gap-3 p-4 p-md-5 bg-danger-subtle border border-2 border-dark rounded-4 shadow-sm">
+            <div>
+              <h3 class="display-6 fw-bold">Fly for fun with paper planes</h3>
+              <a href="#shop" class="btn btn-dark rounded-pill stretched-link mt-2">Shop flyers</a>
+            </div>
+            <span class="display-1" aria-hidden="true">✈️</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="position-relative h-100 d-flex align-items-center justify-content-between gap-3 p-4 p-md-5 bg-info-subtle border border-2 border-dark rounded-4 shadow-sm">
+            <div>
+              <h3 class="display-6 fw-bold">Toy super spring sale</h3>
+              <a href="#shop" class="btn btn-dark rounded-pill stretched-link mt-2">Shop the sale</a>
+            </div>
+            <span class="display-1" aria-hidden="true">🎈</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="bg-primary-subtle border border-2 border-dark rounded-4 shadow-sm p-4 p-md-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h2 class="display-6 fw-bold mb-2">Join the Play Club</h2>
+            <p class="fs-5 mb-0">Get 10% off your first order.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="input-group input-group-lg">
+              <input type="email" class="form-control border-2 border-dark" placeholder="Your email address" aria-label="Email address" required>
+              <button class="btn btn-dark" type="submit">Join now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-bg-dark py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a class="fs-3 fw-bold text-white text-decoration-none" href="#top"> PlayPop</a>
+          <p class="text-white-50 mt-2 mb-0">Toys chosen by parents, tested by kids, delivered fast.</p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h3 class="h6 mb-3">Quick links</h3>
+          <ul class="list-unstyled d-grid gap-2 mb-0">
+            <li><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="#shop">Shop</a></li>
+            <li><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="./about-us.html">About us</a></li>
+            <li><a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="./contact-us.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h3 class="h6 mb-3">Say hello</h3>
+          <p class="text-white-50 mb-2">✉️ hello@playpop.example</p>
+          <div class="d-flex gap-3">
+            <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Facebook</a>
+            <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="#">Instagram</a>
+            <a class="link-light link-underline-opacity-0 link-underline-opacity-100-hover" href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="text-white-50 small text-center mb-0">© 2026 PlayPop Toy Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartTitle">
+    <div class="offcanvas-header border-bottom border-2 border-dark">
+      <h2 class="offcanvas-title h4 mb-0" id="cartTitle">Your bag (2)</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <p class="small mb-1">You're <strong>$19.00</strong> away from free shipping.</p>
+      <div class="progress border border-2 border-dark mb-4" role="progressbar" aria-label="Free shipping progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-success w-75"></div>
+      </div>
+
+      <ul class="list-group list-group-flush mb-3">
+        <li class="list-group-item d-flex align-items-center gap-3 px-0">
+          <span class="bg-danger-subtle border border-2 border-dark rounded-3 fs-3 lh-1 p-2" aria-hidden="true">🐻</span>
+          <span class="flex-grow-1 fw-semibold">Barnaby the Big Hug Bear</span>
+          <span class="fw-bold">$24.00</span>
+        </li>
+        <li class="list-group-item d-flex align-items-center gap-3 px-0">
+          <span class="bg-info-subtle border border-2 border-dark rounded-3 fs-3 lh-1 p-2" aria-hidden="true">🚀</span>
+          <span class="flex-grow-1 fw-semibold">Rocket Racer Kit</span>
+          <span class="fw-bold">$32.00</span>
+        </li>
+      </ul>
+
+      <div class="mt-auto">
+        <div class="d-flex justify-content-between fs-5 fw-bold mb-3"><span>Subtotal</span><span>$56.00</span></div>
+        <div class="d-grid gap-2">
+          <a href="#" class="btn btn-warning btn-lg border-2 border-dark fw-semibold">Checkout</a>
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="offcanvas">Keep shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-2 border-dark rounded-4">
+        <div class="modal-header border-0 pb-0">
+          <h2 class="modal-title h4 fw-bold" id="loginTitle">Hey, player! </h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+              <label for="loginEmail">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+              <label for="loginPassword">Password</label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Keep me signed in</label>
+            </div>
+            <button type="submit" class="btn btn-warning btn-lg w-100 border-2 border-dark fw-semibold">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
