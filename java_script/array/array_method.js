@@ -1,12 +1,12 @@
 // call back function=> A callback function is just a function you give to another function, so that it can call it back later.
 // for each
 //
-let fruits = ["mango", "banana", "orange", "apple"];
+fruits = ["mango", "banana", "orange", "apple"];
 
 fruits.forEach((value, index) => console.log("I like", value));
 
 
-map
+// map
 
 number=[1,2,3,4,5]
 number.map((element,index)=>{
@@ -17,8 +17,8 @@ number.map((element,index)=>{
 
 
 
-filter
-create new array
+// filter
+// create new array
 
 number=[1,2,3,4,5,6,7,8,9,10]
 evennum=number.filter((num)=> num%2==0)
@@ -30,8 +30,8 @@ oddnum=number.filter((num)=> num%2!=0)
 console.log(oddnum)
 
 
-primr numbers==================================
-let number=[1,2,3,4,5,6,7,8,9,10]
+// primr numbers==================================
+ number=[1,2,3,4,5,6,7,8,9,10]
 primenum=number.filter((num)=>{
   if(num<2){
     return false
@@ -48,7 +48,7 @@ console.log(primenum)
 
 
 
-odd number square
+// odd number square
 let number = [1,2,3,4,5,6,7,8,9,10];
 
 let oddnum = number.filter(num => num % 2 !== 0);
@@ -62,7 +62,7 @@ console.log(oddsquare);
 
 
 
-find
+// find
 carname = ["Porsche", "BMW", "Audi", "Mercedes", "Ferrari", "Lamborghini"]
 let ffind = carname.find(c => c == "BMW")
 console.log(ffind); 
@@ -78,9 +78,9 @@ iidex=carname.findIndex(v=>v=="Audi")
 console.log(iidex)
 
 
-sort
-a=smaller,b=bigger
-accending order
+// sort
+// a=smaller,b=bigger
+// accending order
 let numbers = [5, 2, 9, 1, 7];
 let ssort=numbers.sort((a,b)=>a-b)
 console.log("sorted array in Ascending order = ",ssort)
