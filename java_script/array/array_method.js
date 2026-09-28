@@ -1,6 +1,6 @@
 // call back function=> A callback function is just a function you give to another function, so that it can call it back later.
 // for each
-//
+
 fruits = ["mango", "banana", "orange", "apple"];
 
 fruits.forEach((value, index) => console.log("I like", value));
